@@ -23,7 +23,8 @@ ul,
 ol {
   list-style: none;
 }
-.clearfix::after{
+
+.clearfix::after {
   display: table;
   content: "";
   clear: both;
@@ -33,17 +34,19 @@ ol {
   width: 1140px;
   margin: 0 auto;
 }
+
 .logotype-link {
   font-family: 'Roboto', sans-serif;
   color: #515151;
   text-transform: uppercase;
   font-weight: 400;
-font-size: 30px;
-line-height: 1.5;
-float: left;
-margin-bottom: 115px;
-margin-top: 40px;
+  font-size: 30px;
+  line-height: 1.5;
+  float: left;
+  margin-bottom: 115px;
+  margin-top: 40px;
 }
+
 .logotype-link::first-letter {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -56,26 +59,30 @@ margin-top: 40px;
   /* почему ли двигаем влево а ссылки вправо? */
   text-align: right;
 }
+
 .navigation-list-item {
   float: left;
 }
+
 .navigation-list-item:not(:last-of-type) {
-margin-right: 36px;
+  margin-right: 36px;
 }
+
 .navigation-list-link {
-font-family: 'OpenSans', sans-serif;
-text-transform: uppercase;
-font-size: 14px;
-font-weight: bold;
-line-height: 24px;
-margin-top: 44px;
-/* для чего тут используется line-height? */
-color: #0f0101;
+  font-family: 'OpenSans', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-top: 44px;
+  /* для чего тут используется line-height? */
+  color: #0f0101;
 }
-.navigation-list-item a:hover
-.navigation-list-item a:focus{
+
+.navigation-list-item a:hover .navigation-list-item a:focus {
   color: #1abc9c;
 }
+
 .products-headline {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -84,6 +91,7 @@ color: #0f0101;
   text-align: center;
   color: #515151;
 }
+
 .products-headline::after {
   display: block;
   content: "";
@@ -94,34 +102,75 @@ color: #0f0101;
   margin-bottom: 92px;
   margin-top: 24px;
 }
+
 .product-list-item {
   float: left;
   margin-right: 30px;
 }
+
 .product-description {
-  width: 100%;
- line-height: 32px;
- font-size: 18px;
- letter-spacing: -0.02em;
- font-weight: 900;
- text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  /* width: 100%; */
+  /* line-height: 32px; */
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-.title::after {
+
+.product-description {
+  background-color: #323232;
+  width: 256px;
+  height: 42px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.title {
   text-align: left;
- float: left;
- overflow: hidden;
- width: 201px;
- margin: 0;
- padding-left: 13px;
- color: #ffffff;
- background: #323232;
- line-height: 37px;
+  float: left;
+  overflow: hidden;
+  width: 201px;
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 13px;
+  color: #ffffff;
+  line-height: 37px;
 }
-/* .clearfix::after{
-  display: table;
+
+.price {
+  float: right;
+  width: 54px;
+  height: 100%;
+  overflow: hidden;
+  background:rgba(red, green, blue, alpha) #8c8c8c;
+  color: #ffffff;
+  opacity: 0.439;
+  text-align: center;
+  line-height: 37px;
+}
+
+.latest-news-headline {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #515151;
+  margin-top: 106px;
+}
+
+.latest-news-headline::after {
+  display: block;
   content: "";
-  clear: both;
-} */
+  width: 166px;
+  height: 6px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  margin-bottom: 92px;
+  margin-top: 24px;
+}
+
+
 
 
 
