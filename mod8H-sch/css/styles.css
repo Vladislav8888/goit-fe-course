@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* roboto-slab-regular - latin_cyrillic */
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
+        url("../fonts/roboto-slab-v9-latin_cyrillic/roboto-slab-v9-latin_cyrillic-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-slab-v9-latin_cyrillic/roboto-slab-v9-latin_cyrillic-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-700 - latin_cyrillic */
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"),
+        url("../fonts/roboto-slab-v9-latin_cyrillic/roboto-slab-v9-latin_cyrillic-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-slab-v9-latin_cyrillic/roboto-slab-v9-latin_cyrillic-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat Regular"), local("Montserrat-Regular"),
+        url("../fonts/montserrat-v14-latin_cyrillic/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/montserrat-v14-latin_cyrillic/montserrat-v14-latin_cyrillic-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+        url("../fonts/montserrat-v14-latin_cyrillic/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/montserrat-v14-latin_cyrillic/montserrat-v14-latin_cyrillic-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.container {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: none;
+}
+
+.btn-list {
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-style: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    width: 90px;
+    height: 36px;
+    margin-top: 20px;
+    margin-bottom: 116px;
+
+}
+
+.btn:hover {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.logo-item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.title-holiday {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.last-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-find {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 280px;
+    height: 40px;
+    border: none;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    margin-bottom: 138px;
+}
+
+.about-holiday {
+    background-image: url(../img/imgB.jpg);
+    width: 100%;
+    min-height: 540px;
+    padding-top: 176px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partners {
+    padding-top: 70px;
+}
+
+.partners-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.foto-item {
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+
+.foto-partners {
+    width: 122px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.foto-partners::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ff4e50;
+    background-image: url(../img/TV.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.botl-after::after {
+    background-image: url(../img/botl.png);
+    background-color: #ffa507;
+}
+
+.cap-after::after {
+    background-image: url(../img/cap.png);
+    background-color: #1cd7ad;
+}
+
+.fly-after::after {
+    background-image: url(../img/fly.png);
+    background-color: #4e73db;
+}
+
+.name-partners {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.about-partners {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.other-partners {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4e50;
+    width: 282px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #ff4e50;
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 748px;
+    }
+
+    .logo-item {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+
+    .logo {
+        margin-top: 50px;
+    }
+
+    .title-holiday {
+        font-size: 52px;
+        letter-spacing: 1px;
+        margin-top: 150px;
+        margin-bottom: 42px;
+    }
+
+    .last-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .holiday-item {
+        text-align: center;
+    }
+
+    .btn-find {
+        width: 230px;
+        height: 40px;
+        margin-bottom: 234px;
+    }
+
+    .about-holiday {
+        background-image: url(../img/img\ tabl.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .partners {
+        padding: 0;
+    }
+
+    .partners-title {
+        font-size: 22px;
+        margin-top: 74px;
+        margin-bottom: 32px;
+    }
+
+    .partners-block {
+        width: 194px;
+        margin: 0 auto;
+    }
+
+    .partners-list-item {
+        width: 50%;
+    }
+
+    .partners-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .other-partners {
+        display: block;
+        width: 194px;
+        height: 40px;
+        margin: 30px auto 40px;
+    }
+
+}
+
+@media (min-width: 980px) {
+    .about-holiday {
+        background-image: url(../img/img\ desc.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container {
+        width: 946px;
+    }
+
+    .holiday-item {
+        width: 518px;
+        margin: 0 auto;
+    }
+
+    .partners-block {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .partners-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .partners-list-item {
+        width: 20%;
+    }
+
+}
